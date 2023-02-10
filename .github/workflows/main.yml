@@ -30,7 +30,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: setup-node
-        uses: actions/node@master
+        uses: actions/setup-node@master
         with:
           node-version: ${{matrix.node_version}}
 
