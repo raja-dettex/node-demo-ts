@@ -42,6 +42,7 @@ jobs:
       - name: build
         run: npm run build
   push_to_docker_hub:
+    runs-on: ubuntu-latest
     needs: [build]
     steps:
     - name: checkout-repo
