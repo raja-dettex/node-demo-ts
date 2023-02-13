@@ -41,7 +41,8 @@ jobs:
           npm ci
       - name: build
         run: |
-          npm install typescript
+          npm install typescript -g 
+          npm install tsc -g
           npm run build
   push_to_docker_hub:
     runs-on: ubuntu-latest
